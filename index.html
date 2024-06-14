@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lista de Afazeres</title>
+</head>
+<body>
+
+    <div id="container">
+        <section id="title">
+            <h1>Lista de Afazeres</h1>
+        </section>
+
+        <section id="form">
+            <form id="add-task">
+                <input type="text" maxlength="20" id="input" required placeholder="Insira uma tarefa">
+                <abbr title="Adicionar tarefa.">
+                    <button>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </abbr>
+            </form>
+        </section>
+
+        <section id="list">
+            <ul id="task">
+                
+            </ul>
+        </section>
+
+    </div>
+
+    <abbr title="Alterar tema.">
+        <button id="float-button">
+            <i class="fa-solid fa-brush"></i>
+        </button>
+    </abbr>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>
