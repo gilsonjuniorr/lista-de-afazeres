@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-weight: 400;
 }
 
 body {
@@ -87,7 +88,6 @@ input:focus {
 #list li {
     position: relative;
     background-color: #ffffff4b;
-    color: #262629;
     margin-bottom: 6px;
     padding: 10px 60px 10px 10px;
     width: 370px;
@@ -148,6 +148,8 @@ input:focus {
 
 .completed {
     text-decoration: line-through;
+    font-weight: 300;
+    color: #5D5D6F;
 }
 
 @media screen and (max-width: 499px) {
