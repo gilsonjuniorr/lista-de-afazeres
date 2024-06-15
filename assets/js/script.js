@@ -28,10 +28,10 @@ function createTask(li) {
     const trash = createTrashIcon();
     li.appendChild(trash);
 
-    salveTask();
+    saveTask();
 }
 
-function salveTask() {
+function saveTask() {
     const ul = document.querySelector('#task');
     const task = ul.querySelectorAll('li');
     const toDolist = [];
@@ -91,7 +91,7 @@ function createTrashIcon() {
 function deleteTask() {
     const li = this.parentNode;
     li.remove();
-    salveTask();
+    saveTask();
 }
 
 function createIconToEdit() {
@@ -106,5 +106,19 @@ function createIconToEdit() {
 }
 
 function editTask() {
-    alert('Essa função ainda não está disponível.')
+    const maxLength = 20;
+    let newTask = prompt(`Por favor, digite a nova tarefa abaixo (limite de ${maxLength} caracteres):`);
+
+    if (!newTask) return;
+
+    if (newTask.length > maxLength) {
+        alert(`Limite de ${maxLength} caracteres excedido. Apenas os primeiros ${maxLength} caracteres serão utilizados.`);
+        newTask = newTask.slice(0, maxLength);
+    }
+
+    const li = this.parentNode;
+    const text = li.childNodes[1];
+    text.textContent = newTask;
+
+    saveTask();
 }
