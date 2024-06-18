@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(){
     function createTrashIcon() {
         const icon = document.createElement('i');
         icon.classList.add('fa-regular', 'fa-trash-can');
-        icon.title = 'Apagar.';
+        icon.title = 'Apagar';
         icon.addEventListener('click', deleteTask);
         return icon;
     }
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(){
     function createIconToEdit() {
         const icon = document.createElement('i');
         icon.classList.add('fa-regular', 'fa-pen-to-square');
-        icon.title = 'Editar.';
+        icon.title = 'Editar';
         icon.addEventListener('click', editTask);
         return icon;
     }
